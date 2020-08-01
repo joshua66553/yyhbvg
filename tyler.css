@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 150px;
+  padding-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-block {
+  position: absolute;
+  margin: auto;
+  top: 115px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 35px;
+  background-color: grey;
+  opacity: 0.8;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+a {
+  color: #ffffff;
+}
+
+.partner {
+width: 375px;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative;
+}
+
+/* 1.8. CUSTOM BUTTONS */
+.tyler,
+a.tyler {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    font-family: 'Oswald', sans-serif;
+    -webkit-transition: color .25s ease, border-color .25s ease;
+            transition: color .25s ease, border-color .25s ease;
+    outline: 0;
+}
+
+.btn {
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
+  background-image: 'C:/Users/Tyler/Desktop/Site/img/branding/Banner----Blue-Gray-Text.png';
+  background-size: auto;
+}
+
+.btn:hover {opacity: 1}
+
+.poop {
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  opacity: 1.0;
+  transition: 0.3s;
+}
+
+.poop:hover {opacity: 1}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
